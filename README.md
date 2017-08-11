@@ -17,12 +17,12 @@ Next, setup rpmbuild directories with
 ```bash
 $ rpmdev-setuptree
 ```
-And place the file dapper-screenfetch.spec in the SPECS directory, and rename the dapper-screenfetch directory to dapper-screenfetch-1 and compress it:
+And place the file dapper-screenfetch.spec in the SPECS directory, and rename the dapper-screenfetch directory to dapper-screenfetch-3.8.1 and compress it:
 ```bash
 $ mv dapper-screenfetch.spec ~/rpmbuild/SPECS/
-$ mv dapper-screenfetch dapper-screenfetch-1
-$ tar -czvf dapper-screenfetch-1.tar.gz dapper-screenfetch-25.0
-$ mv dapper-screenfetch-1.tar.gz ~/rpmbuild/SOURCES/
+$ mv dapper-screenfetch dapper-screenfetch-3.8.1
+$ tar -cJvf dapper-screenfetch-3.8.1.tar.xz dapper-screenfetch-3.8.1
+$ mv dapper-screenfetch-3.8.1.tar.xz ~/rpmbuild/SOURCES/
 ```
 
 and finally, you can build RPMs and SRPMs with:
